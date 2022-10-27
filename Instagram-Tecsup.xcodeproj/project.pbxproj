@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		862660E828FA12230031FB72 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862660E728FA12220031FB72 /* Settings.storyboard */; };
+		8681DC7D29032FB8007EBEAC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8681DC7C29032FB8007EBEAC /* FirebaseAuth */; };
+		8681DC7F29032FB8007EBEAC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8681DC7E29032FB8007EBEAC /* FirebaseDatabase */; };
+		8681DC8129032FB8007EBEAC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8681DC8029032FB8007EBEAC /* FirebaseFirestore */; };
+		8681DC8329032FB8007EBEAC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8681DC8229032FB8007EBEAC /* FirebaseStorage */; };
+		8681DC8529033F43007EBEAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8681DC8429033F43007EBEAC /* LoginViewController.swift */; };
 		868B9A6C28F9FBC8006C62A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868B9A6B28F9FBC8006C62A5 /* AppDelegate.swift */; };
 		868B9A6E28F9FBC8006C62A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868B9A6D28F9FBC8006C62A5 /* SceneDelegate.swift */; };
 		868B9A7028F9FBC8006C62A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868B9A6F28F9FBC8006C62A5 /* ViewController.swift */; };
 		868B9A7328F9FBC8006C62A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868B9A7128F9FBC8006C62A5 /* Main.storyboard */; };
 		868B9A7528F9FBC9006C62A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868B9A7428F9FBC9006C62A5 /* Assets.xcassets */; };
 		868B9A7828F9FBC9006C62A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868B9A7628F9FBC9006C62A5 /* LaunchScreen.storyboard */; };
+		86ACDF9D2903271D001AFC97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86ACDF9C2903271D001AFC97 /* GoogleService-Info.plist */; };
+		86BCB48128FA145400734214 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BCB48028FA145400734214 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		862660E728FA12220031FB72 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		8681DC8429033F43007EBEAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		868B9A6828F9FBC8006C62A5 /* Instagram-Tecsup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Tecsup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		868B9A6B28F9FBC8006C62A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868B9A6D28F9FBC8006C62A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		868B9A7428F9FBC9006C62A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		868B9A7728F9FBC9006C62A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		868B9A7928F9FBC9006C62A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86ACDF9C2903271D001AFC97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		86BCB48028FA145400734214 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8681DC7F29032FB8007EBEAC /* FirebaseDatabase in Frameworks */,
+				8681DC8329032FB8007EBEAC /* FirebaseStorage in Frameworks */,
+				8681DC7D29032FB8007EBEAC /* FirebaseAuth in Frameworks */,
+				8681DC8129032FB8007EBEAC /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,67 @@
 		868B9A6A28F9FBC8006C62A5 /* Instagram-Tecsup */ = {
 			isa = PBXGroup;
 			children = (
+				868B9A8528F9FD03006C62A5 /* Screens */,
+				868B9A8328F9FC86006C62A5 /* Resources */,
+				868B9A8228F9FC7C006C62A5 /* Onboarding */,
+				868B9A8128F9FC61006C62A5 /* ViewModel */,
+				868B9A8028F9FC52006C62A5 /* View */,
+				868B9A7F28F9FC49006C62A5 /* Model */,
 				868B9A6B28F9FBC8006C62A5 /* AppDelegate.swift */,
 				868B9A6D28F9FBC8006C62A5 /* SceneDelegate.swift */,
-				868B9A6F28F9FBC8006C62A5 /* ViewController.swift */,
-				868B9A7128F9FBC8006C62A5 /* Main.storyboard */,
-				868B9A7428F9FBC9006C62A5 /* Assets.xcassets */,
-				868B9A7628F9FBC9006C62A5 /* LaunchScreen.storyboard */,
+				86ACDF9C2903271D001AFC97 /* GoogleService-Info.plist */,
 				868B9A7928F9FBC9006C62A5 /* Info.plist */,
 			);
 			path = "Instagram-Tecsup";
+			sourceTree = "<group>";
+		};
+		868B9A7F28F9FC49006C62A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		868B9A8028F9FC52006C62A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				868B9A6F28F9FBC8006C62A5 /* ViewController.swift */,
+				86BCB48028FA145400734214 /* SettingsViewController.swift */,
+				8681DC8429033F43007EBEAC /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		868B9A8128F9FC61006C62A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		868B9A8228F9FC7C006C62A5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				868B9A7628F9FBC9006C62A5 /* LaunchScreen.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		868B9A8328F9FC86006C62A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				868B9A7428F9FBC9006C62A5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		868B9A8528F9FD03006C62A5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				868B9A7128F9FBC8006C62A5 /* Main.storyboard */,
+				862660E728FA12220031FB72 /* Settings.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +151,12 @@
 			dependencies = (
 			);
 			name = "Instagram-Tecsup";
+			packageProductDependencies = (
+				8681DC7C29032FB8007EBEAC /* FirebaseAuth */,
+				8681DC7E29032FB8007EBEAC /* FirebaseDatabase */,
+				8681DC8029032FB8007EBEAC /* FirebaseFirestore */,
+				8681DC8229032FB8007EBEAC /* FirebaseStorage */,
+			);
 			productName = "Instagram-Tecsup";
 			productReference = 868B9A6828F9FBC8006C62A5 /* Instagram-Tecsup.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 868B9A5F28F9FBC8006C62A5;
+			packageReferences = (
+				8681DC7B29032FB8007EBEAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 868B9A6928F9FBC8006C62A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +205,8 @@
 				868B9A7828F9FBC9006C62A5 /* LaunchScreen.storyboard in Resources */,
 				868B9A7528F9FBC9006C62A5 /* Assets.xcassets in Resources */,
 				868B9A7328F9FBC8006C62A5 /* Main.storyboard in Resources */,
+				862660E828FA12230031FB72 /* Settings.storyboard in Resources */,
+				86ACDF9D2903271D001AFC97 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +220,8 @@
 				868B9A7028F9FBC8006C62A5 /* ViewController.swift in Sources */,
 				868B9A6C28F9FBC8006C62A5 /* AppDelegate.swift in Sources */,
 				868B9A6E28F9FBC8006C62A5 /* SceneDelegate.swift in Sources */,
+				8681DC8529033F43007EBEAC /* LoginViewController.swift in Sources */,
+				86BCB48128FA145400734214 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +439,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8681DC7B29032FB8007EBEAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8681DC7C29032FB8007EBEAC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8681DC7B29032FB8007EBEAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8681DC7E29032FB8007EBEAC /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8681DC7B29032FB8007EBEAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8681DC8029032FB8007EBEAC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8681DC7B29032FB8007EBEAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8681DC8229032FB8007EBEAC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8681DC7B29032FB8007EBEAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 868B9A6028F9FBC8006C62A5 /* Project object */;
 }
