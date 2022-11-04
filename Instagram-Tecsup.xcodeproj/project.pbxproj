@@ -21,6 +21,8 @@
 		868B9A7828F9FBC9006C62A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868B9A7628F9FBC9006C62A5 /* LaunchScreen.storyboard */; };
 		86ACDF9D2903271D001AFC97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86ACDF9C2903271D001AFC97 /* GoogleService-Info.plist */; };
 		86BCB48128FA145400734214 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BCB48028FA145400734214 /* SettingsViewController.swift */; };
+		86F7814C290C2E19002CB6D7 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F7814B290C2E19002CB6D7 /* Option.swift */; };
+		86F7814E290C423B002CB6D7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F7814D290C423B002CB6D7 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		868B9A7928F9FBC9006C62A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86ACDF9C2903271D001AFC97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		86BCB48028FA145400734214 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		86F7814B290C2E19002CB6D7 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		86F7814D290C423B002CB6D7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		868B9A7F28F9FC49006C62A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				86F7814B290C2E19002CB6D7 /* Option.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				868B9A6F28F9FBC8006C62A5 /* ViewController.swift */,
 				86BCB48028FA145400734214 /* SettingsViewController.swift */,
 				8681DC8429033F43007EBEAC /* LoginViewController.swift */,
+				86F7814D290C423B002CB6D7 /* ProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,6 +227,8 @@
 				868B9A6C28F9FBC8006C62A5 /* AppDelegate.swift in Sources */,
 				868B9A6E28F9FBC8006C62A5 /* SceneDelegate.swift in Sources */,
 				8681DC8529033F43007EBEAC /* LoginViewController.swift in Sources */,
+				86F7814E290C423B002CB6D7 /* ProfileViewController.swift in Sources */,
+				86F7814C290C2E19002CB6D7 /* Option.swift in Sources */,
 				86BCB48128FA145400734214 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,6 +18,17 @@ class LoginViewController: UIViewController {
         txtPassword.isSecureTextEntry = true
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        checkSession()
+    }
+    
+    func checkSession() {
+        if Auth.auth().currentUser != nil {
+            /// Si el currentUser existe entonces tenemos session de usuario
+            self.performSegue(withIdentifier: "seguelogin", sender: nil)
+        }
+    }
+    
     @IBAction func onTaplogin(_ sender: UIButton) {
         if txtEmail.text == "" || txtPassword.text == "" {
             let alert = UIAlertController(title: "Error", message: "Completa los campos", preferredStyle: .alert)
@@ -39,12 +50,11 @@ class LoginViewController: UIViewController {
             // que todo esta bien por ende error es igual nil
             if error == nil {
                 /// El usuario existe
-                
+                self.performSegue(withIdentifier: "seguelogin", sender: nil)
             } else {
                 /// El usuario no existe
                 self.signUp(email: email, password: password)
             }
-            
         }
     }
     
@@ -58,7 +68,7 @@ class LoginViewController: UIViewController {
                 alert.addAction(alertButton)
             } else {
                 // Se creo al usario
-                
+                self.performSegue(withIdentifier: "seguelogin", sender: nil)
             }
         }
     }

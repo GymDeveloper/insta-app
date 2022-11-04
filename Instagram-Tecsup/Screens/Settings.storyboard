@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="117" width="390" height="693"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="gf1-Bw-09S">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="gf1-Bw-09S">
                                         <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gf1-Bw-09S" id="NSW-Sm-GYu">
@@ -52,6 +52,9 @@
                             <constraint firstItem="8HG-Q3-kTL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="70" id="xTV-jh-50Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="8HG-Q3-kTL" id="F62-X5-iro"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
