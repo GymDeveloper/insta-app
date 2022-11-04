@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		862660E828FA12230031FB72 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862660E728FA12220031FB72 /* Settings.storyboard */; };
+		864730A22914DAE700F797CE /* UpdateProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864730A12914DAE700F797CE /* UpdateProfile.storyboard */; };
+		864730A42914DCE400F797CE /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864730A32914DCE400F797CE /* UpdateProfileViewController.swift */; };
+		864730A62914EDC800F797CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864730A52914EDC800F797CE /* User.swift */; };
 		8681DC7D29032FB8007EBEAC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8681DC7C29032FB8007EBEAC /* FirebaseAuth */; };
 		8681DC7F29032FB8007EBEAC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8681DC7E29032FB8007EBEAC /* FirebaseDatabase */; };
 		8681DC8129032FB8007EBEAC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8681DC8029032FB8007EBEAC /* FirebaseFirestore */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		862660E728FA12220031FB72 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		864730A12914DAE700F797CE /* UpdateProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateProfile.storyboard; sourceTree = "<group>"; };
+		864730A32914DCE400F797CE /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
+		864730A52914EDC800F797CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8681DC8429033F43007EBEAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		868B9A6828F9FBC8006C62A5 /* Instagram-Tecsup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Tecsup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		868B9A6B28F9FBC8006C62A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				86F7814B290C2E19002CB6D7 /* Option.swift */,
+				864730A52914EDC800F797CE /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 				86BCB48028FA145400734214 /* SettingsViewController.swift */,
 				8681DC8429033F43007EBEAC /* LoginViewController.swift */,
 				86F7814D290C423B002CB6D7 /* ProfileViewController.swift */,
+				864730A32914DCE400F797CE /* UpdateProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 			children = (
 				868B9A7128F9FBC8006C62A5 /* Main.storyboard */,
 				862660E728FA12220031FB72 /* Settings.storyboard */,
+				864730A12914DAE700F797CE /* UpdateProfile.storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -213,6 +222,7 @@
 				868B9A7328F9FBC8006C62A5 /* Main.storyboard in Resources */,
 				862660E828FA12230031FB72 /* Settings.storyboard in Resources */,
 				86ACDF9D2903271D001AFC97 /* GoogleService-Info.plist in Resources */,
+				864730A22914DAE700F797CE /* UpdateProfile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +238,8 @@
 				868B9A6E28F9FBC8006C62A5 /* SceneDelegate.swift in Sources */,
 				8681DC8529033F43007EBEAC /* LoginViewController.swift in Sources */,
 				86F7814E290C423B002CB6D7 /* ProfileViewController.swift in Sources */,
+				864730A62914EDC800F797CE /* User.swift in Sources */,
+				864730A42914DCE400F797CE /* UpdateProfileViewController.swift in Sources */,
 				86F7814C290C2E19002CB6D7 /* Option.swift in Sources */,
 				86BCB48128FA145400734214 /* SettingsViewController.swift in Sources */,
 			);
